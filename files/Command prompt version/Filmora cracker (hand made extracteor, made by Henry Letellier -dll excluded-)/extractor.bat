@@ -55,10 +55,10 @@ echo ###########################################################################
 echo ".____________________________________________________________________________________________________________________."
 echo "|                                      You can find these files at:                                                  |"
 echo "|                                      The bat file:                                                                 |"
-echo "|                                                                                                                    |"
+echo "|                                      https://bit.ly/3dnBjqY                                                        |"
 echo "|====================================================================================================================|"
 echo "|                                      The python version (better develloped, better guided):                        |"
-echo "|                                                                                                                    |"
+echo "|                                      https://bit.ly/2No5Bzh                                                        |"
 echo "|____________________________________________________________________________________________________________________|"
 echo If the copy failes please check the following ellemnts:
 echo 1. Check that you have all the required files
