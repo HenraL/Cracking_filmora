@@ -1,17 +1,50 @@
 from time import sleep
 import platform
 import os
-color 0A
-echo off
+#color 0A
+#echo off
 def pause():
     pause=input("Press enter to continue...")
 def cd(r):
     os.system("cd {}".format(r))
+def copy(file, target):
+    try:
+        os.system()
+    except:
+        print("Wondershare Filmora is not in programfiles(x86)")
+    try:
+        os.system()
+    except:
+        print("Wondershare Filmora is not in programfiles")
+    print()
+    print("Make shure you have installed Wondershare Filmora 9.X.X in one of the common places (program file(x86) or programfiles).")
+    print("If this is not the case, but you have installed Wondershare Filmora, please enter the path to access it")
+    print("A path is composed of:")
+    print("- The letter of the disk that is concerned (C, D, E, etc)")
+    print("- The folders to acces the required target (The letter\my first folder\my second Folder\The target)")
+    print()
+    disk=input("Please enter the letter of the disk containing the filmora software (C, D, E, etc):")
+    path="{}:\\".format(disk)
+    folders=int(input("Please enter the number of folder or subfolders that separate the program (the folder containing the program is excluded (the name of that folder is Wondershare)) from the source of the disk. (The letter is called the source):"))
+    for i in folders:
+         follder=input("Please enterthe name of the folder n°{}:".format(i))
+        path+="{}\\".format(follder)
+    path+="Wondershare\Filmora{}".format(fversion)
+    print("The path is '{}'".format(path))
+    print("You can check to see if the path is wright by copy/pasting the following path: {}".format(path))
+    testp=input("Enter T or t for the program to test the path, otherwise leave this question empty")
+    if testp=="t" or testp=="T"
+    
 def cls():
     if platform.system=="Windows":
         os.system("cls")
-    elif platform.system==
-cls
+    elif platform.system=="Linux":
+        os.system("clean")
+    else:
+        print("please run this program under windows")
+cls()
+print("Before we start")
+fversion=int(input("Please enter the first number of the version of filmora that you're trying to crack (example: in 9.X.X you will enter 9):"))
 contiinue="go"
 while contiinue=="go":
     print("If you encounter problems like acces denied, try running the program with admin wrights.")
