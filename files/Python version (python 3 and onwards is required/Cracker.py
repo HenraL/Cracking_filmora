@@ -1,8 +1,16 @@
 from time import sleep
 import platform
 import os
+import shutil
 #color 0A
 #echo off
+def start(a):
+    try:
+        os.system("{}".format(a))
+    except:
+        print("Nothing has happened because you're either not on a pc or your comand prompt is damaged and so is missing some command lines.")
+def copy(src, dest):
+    shutil.copy(src, dest)
 def pause():
     pause=input("Press enter to continue...")
 def cd(r):
@@ -24,16 +32,27 @@ def copy(file, target):
     print("- The folders to acces the required target (The letter\my first folder\my second Folder\The target)")
     print()
     disk=input("Please enter the letter of the disk containing the filmora software (C, D, E, etc):")
-    path="{}:\\".format(disk)
+    souce="{}:/".format(disk)
     folders=int(input("Please enter the number of folder or subfolders that separate the program (the folder containing the program is excluded (the name of that folder is Wondershare)) from the source of the disk. (The letter is called the source):"))
     for i in folders:
          follder=input("Please enterthe name of the folder n°{}:".format(i))
-        path+="{}\\".format(follder)
-    path+="Wondershare\Filmora{}".format(fversion)
-    print("The path is '{}'".format(path))
-    print("You can check to see if the path is wright by copy/pasting the following path: {}".format(path))
-    testp=input("Enter T or t for the program to test the path, otherwise leave this question empty")
-    if testp=="t" or testp=="T"
+        path+="{}/".format(follder)
+    path+="Wondershare/Filmora{}".format(fversion)
+    testpcont="cont"
+    while testpcont=="cont":
+        print("The path is '{}'".format(path))
+        print("You can check to see if the path is wright by copy/pasting the following path: {}".format(path))
+        testp=input("Enter T or t for the program to test the path, otherwise leave this question empty")
+        if testp=="t" or testp=="T":
+            try:
+                start(path)
+            except:
+                print("Nothing has happened because you're either not on a pc or your comand prompt is damaged and so is missing some command lines.")
+        elif testp=="" or testp==" " or testp=="    ":
+            copy("files/PYG64(1).dll","{}{}PYG64.dll".format(source,path))
+            copy("files/winmm(1).dll","{}{}winmm.dll".format(source,path))
+        else:
+        
     
 def cls():
     if platform.system=="Windows":
